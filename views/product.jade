@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    div.container
+        h1 Product
+    div.container
+        div.row
+            div.col-sm-4
+                div.card
+                    img(class='card-img-top' src='http://placehold.it/350x150' alt='Card image cap')
+                    div.card-block
+                        h4.card-title BrotherBear Talk Show
+                        p.card-text Bearchitect talk show
+                        button(id='btnBooking1' class="btn btn-primary") Book for $2000	
+            div.col-sm-4
+                div.card
+                    img(class='card-img-top' src='http://placehold.it/350x150' alt='Card image cap')
+                    div.card-block
+                        h4.card-title BearHunter Talk Show
+                        p.card-text BearHunter talk show
+                        button(id='btnBooking2' class="btn btn-primary") Book for $2000	
+            div.col-sm-4
+                div.card
+                    img(class='card-img-top' src='http://placehold.it/350x150' alt='Card image cap')
+                    div.card-block
+                        h4.card-title HuskiBear Talk Show
+                        p.card-text HuskiBear talk show
+                        button(id='btnBooking3' class="btn btn-primary") Book for $2000	
+    script(src='scripts/setupBooking.js')

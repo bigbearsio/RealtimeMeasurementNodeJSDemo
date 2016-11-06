@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    div.container
+        h1 Cart
+    div.container
+        div.panel.panel-default
+            div.panel-heading Your Orders
+                div.panel-body
+                    p
+                        button(id='btnPayment' class="btn btn-success") Make Payment
+                table.table
+                    thead
+                        tr
+                            th Product
+                            th Price
+                            th Action
+                    tbody
+                        tr
+                            th BearHunter Workshop
+                            th $2000
+                            th
+                                button(id='btnCancel1' class="btn btn-danger") Cancel
+                        tr
+                            th BrotherBear Workshop
+                            th $2000
+                            th
+                                button(id='btnCancel3' class="btn btn-danger") Cancel
+                        tr
+                            th HuskiBear Workshop
+                            th $2000
+                            th
+                                button(id='btnCancel2' class="btn btn-danger") Cancel
+    script(src='scripts/setupPayment.js')

@@ -1,38 +1,38 @@
-Node.js Bootstrap Starter Template
-===
+# RealtimeMeasurementDemo
 
-A quick and easy Node.js + Jade template project, using Twitter Bootstrap.
+Demonstration how to use NodeJS with InfluxDb and Grafana to visualize NodeJS-Express Web Application for scalable application
 
-Also available for [Material](https://github.com/primaryobjects/Node.js-Material-Starter-Template).
+# Prerequisite
+- Grafana : http://grafana.org/download/
+- InfluxDb : https://www.influxdata.com/downloads/
 
-## Usage
-- Clone repository.
-- Open a command prompt, navigate to the folder, and enter: npm install
-- Next, run the app by entering: node app
-- Browse to http://localhost:3000
+# Runnin InfluxDb
+- Extract downloaded file to some folder
+- Run "influxd"
+- Go to influxdb web console : http://localhost:8083/
+- Create influxdb user : CREATE USER "bigbears" WITH PASSWORD 'bigbears'
+- Change it according to you code (if any)
+- Create influxdb database: CREATE DATABASE "dev_hapiness"
 
-## Demo:
-http://nodebootstrapper.herokuapp.com
+# Running Grafana
+- Extract downloaded file to some folder
+- Run "bin/grafana-server"
+- login with default username/password (admin/admin)
+- Add influxdb data source
+- Parameter as follows
+  - Name : influx-default (or any name you want)
+  - Default : checked
+  - Type : InfluxDB
+  - url : http://localhost:8086
+  - Access : Direct
+  - Database : dev_hapiness
+  - User : bigbears
+  - Password : bigbears
+  - Defualt group by time : > 30s
 
-## Contents:
+# Checkout code from GitHub
+- You know how to do it !!!
 
-- layout.jade
-- header.jade
-- footer.jade
-- index.jade
-
-## Editing Pages:
-
-Edit views/index.jade to add your content. The default contents include:
-
-```
-extends layout
-
-block content
-	div.container
-		h1 Program Name
-		p Hello World
-```
-
-## Author
-Kory Becker http://www.primaryobjects.com/kory-becker
+# Running Demonstration
+- npm install
+- node app.js

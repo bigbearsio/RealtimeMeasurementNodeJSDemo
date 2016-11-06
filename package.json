@@ -1,14 +1,15 @@
 {
-  "name": "nodebootstraper",
-  "version": "0.0.3",
+  "name": "metricDemo",
+  "version": "1.0.0",
   "dependencies": {
+    "body-parser": "*",
     "express": "*",
+    "influx": "^5.0.0-alpha.4",
     "jade": "*",
-    "stylus": "*",
-	"serve-favicon": "*",
-	"morgan": "*",
-	"body-parser": "*",
-	"method-override": "*"
+    "method-override": "*",
+    "morgan": "*",
+    "serve-favicon": "*",
+    "stylus": "*"
   },
   "engines": {
     "node": "*",
