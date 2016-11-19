@@ -12,7 +12,7 @@ Demonstration how to use NodeJS with InfluxDb and Grafana to visualize NodeJS-Ex
 - Go to influxdb web console : http://localhost:8083/
 - Create influxdb user : CREATE USER "bigbears" WITH PASSWORD 'bigbears'
 - Change it according to you code (if any)
-- Create influxdb database: CREATE DATABASE "dev_hapiness"
+- Create influxdb database: CREATE DATABASE "dev_happiness"
 
 # Running Grafana
 - Extract downloaded file to some folder
